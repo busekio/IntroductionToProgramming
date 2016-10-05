@@ -5,4 +5,4 @@ derle:
 calistir:
 	bin/ilkOrnek.exe
 temizle:
-	del *.*
+	clear
