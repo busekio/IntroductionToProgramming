@@ -7,10 +7,10 @@
 //============================================================================
 
 #include <iostream>
-using namespace std;
+//using namespace std;
 
 int main()
 {
-	cout << "!!!Merhaba Dünya!!!"<< endl; // Merhaba Dünya 
+	std::cout << "!!!Merhaba Dünya!!!"<< std::endl; // Merhaba Dünya 
 	return 0;
 }
