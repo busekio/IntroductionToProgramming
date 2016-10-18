@@ -1,21 +1,26 @@
-// fahren.cpp
-// demonstrates cin, newline
+//============================================================================
+// Name        : 81.cpp
+// Author      : 
+// Version     : v.1.1
+// Copyright   : Your copyright notice
+// Description : Tip Dönüşümleri
+//============================================================================
+
 #include <iostream>
-//#include <conio.h>
+
 using namespace std;
 
 int main()
 {
-   float ftemp,ctemp;  //for temperature in fahrenheit
+   float fSicaklik=0.0f;
+   float cSicaklik=0.0f; 
 
-   cout << "Sicaklik \"fahrenheit\" giriniz ";
-   cin >> ftemp;
-   //ctemp = (ftemp-32) * ((float)5 / 9);  
-   
-   ctemp = (ftemp-32) * (static_cast<float>(5) / 9);  
+   cout << "Sicaklik \"fahrenheit cinsinden\" giriniz \n";
+   cin >> fSicaklik;
+   cSicaklik = (fSicaklik-32) * ( (float)5 / 9);  
  
- 
-  cout << "Celsius olarak: " << ctemp << endl;
-   system("pause");
+   cout << "Celsius olarak: " << cSicaklik << " C dir"<<endl;
+
+   cin.get();cin.get(); // Akışı duraklatma
    return 0;
 } 

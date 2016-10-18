@@ -1,17 +1,17 @@
- // charvars.cpp
-// demonstrates character variables
-#include <iostream>        //for cout, etc.
-//#include <conio.h>
+ // char tipi anlatılıyor
+
+#include <iostream>        // cout, cin ...
+
 using namespace std;
 
 int main()
 {
-   char ch3,ch1 = 'A';    //define char variable as character
-   char ch2 = '\t';   //define char variable as tab
+   char ch3,ch1 = 'A';    
+   char ch2 = '\t';   
    
-   ch3 = 'B';         //set char variable to char constant
-   cout << ch1<< ch2<<'\t'<<"\t"<<ch3<< endl ;       //display character
-    system("pause");        
+   ch3 = 'B';         
+   cout << ch1<< ch2<<'\t'<<"\t"<<ch3<< endl ; 
+   cin.get();cin.get(); // Akışı duraklatma       
   
    return 0;
 }
