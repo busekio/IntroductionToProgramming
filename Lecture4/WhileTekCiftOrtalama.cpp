@@ -1,17 +1,12 @@
 //4. ornek....
 
 #include <iostream>
-#include <conio.h>
-
-
 
 using namespace std;
 
 int main()
 {   
-   int sayi=0; //kla
-   int ciftToplam;
-   int tekToplam,sayacCift,sayacTek;
+  int sayi,tekToplam=0,ciftToplam=0,sayacCift=0,sayacTek=0;
           
           
    cout<<"Sayi giriniz... :";
@@ -42,6 +37,5 @@ int main()
    cout<<"tek Ortalama: "<<tekToplam/sayacTek<<endl<<"cift ortalama:"
               <<ciftToplam/sayacCift;
       
-   system("pause");
    return 0;
 }

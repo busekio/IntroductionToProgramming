@@ -1,7 +1,5 @@
 
 #include <iostream> 
-#include <conio.h>
-
 
 using namespace std;                             //for getche()
 int main()
@@ -10,15 +8,14 @@ int main()
    char yon='a';
    int x=10, y=10;
    
-   //cout << "Konumunuz:" << x << ", " << y;
    
     cout << "Yon giriniz(k,g,d,b):\n" ;
    do
    {    //system("cls");
         //cout << "\r"<<"                             \r"<<"Konumunuz:" <<x << ", " << y;
         cout <<"Konumunuz:" <<x << ", " << y;       
-        yon=getch();
-        switch(yon)                               //switch on it
+		cin>>yon;   
+		switch(yon)                               //switch on it
         {
          case 'k':  y--; break;                 //go north
          case 'g':  y++; break;                 //go south
@@ -32,7 +29,6 @@ int main()
           
         
    }while(yon!='\r');//'while(yon!=char (27)); Esc Tusuna basilmissa cik
-   system("pause"); 
    return 0;
   
 }  //end main

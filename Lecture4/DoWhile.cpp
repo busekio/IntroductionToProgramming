@@ -1,37 +1,20 @@
-//4. ornek....
+
 
 #include <iostream>
-#include <conio.h>
-
-
+#include <cmath>
+#include <iomanip>
 
 using namespace std;
 
+
 int main()
-{   
-    int sayi,tekToplam,ciftToplam,sayacCift,sayacTek;
-    
-   
-   
-     do{     
-          cout<<"sayi giriniz";
-          cin>>sayi;
-          if(sayi>=0)
-          {   if(sayi%2==0)
-              {
-                  ciftToplam+=sayi;
-                  sayacCift++;
-              }else
-              {
-                   tekToplam+=sayi;
-                   sayacTek++;     
-              }
-          }
-     }while(sayi>=0);
-   
-     cout<<"tek ortalama:"<<tekToplam/sayacTek<<endl<<"cift toplam:"
-                <<ciftToplam/sayacCift;  
-   
-   system("pause");
-   return 0;
+{
+   float i=1;
+   //for(i=1;i<=100; i++)
+   do
+   {
+         cout<<setw(10)<<left<<i<<setw(15)<< pow(i,3.0f)<<endl;
+         i++;       
+   }while(i<=100);
+      
 }

@@ -1,5 +1,6 @@
 #include <iostream> 
-#include <conio.h>
+
+
 using namespace std;                             //for getche()
 int main()
    {
@@ -31,10 +32,7 @@ int main()
         
    }while(yon!='\r');
    
-  /* 
    
-   
-    system("pause"); 
    return 0;
   
    }  //end main
