@@ -1,6 +1,7 @@
 #include <iostream> 
 #include <iomanip> 
-#include <ctime> //time() 
+#include <cstdlib> //srand
+
 
 using namespace std;
 
@@ -29,6 +30,5 @@ int main()
       
    }       
    cout<<endl<<matris[0][0]+matris[5][4];
-   system("pause");
    return 0; 
 }

@@ -13,7 +13,7 @@ using namespace std;
 } */
 int main()
 {
-   const int OGR_SAYISI = 50; 
+   const int OGR_SAYISI = 500; 
    const int NOTLAR = 3;
    int donguSayisi=0;
   
@@ -24,9 +24,10 @@ int main()
    for ( int i = 0; i < OGR_SAYISI ; i++ ) // set the values
    {   
        cout<<i+1<<". ogrenci : ";
+       
        for(int j=0;j<NOTLAR-1;j++)
        {
-         notlar[i][j] = rand()%101;
+         notlar[i][j] = rand()%51+40;
          
          cout<<setw(3)<<notlar[i][j];
         // donguSayisi++;
@@ -49,7 +50,5 @@ int main()
    
    cout<<"kalan: "<<kaldi<<"  gecen: "<<gecti << "ortalama: "<< genelToplam/50.0f; 
 
-
-  system("pause");
   return 0; 
 }

@@ -1,6 +1,6 @@
 #include <iostream> 
 #include <iomanip> 
-//#define ESAY 10
+//#define ESAY 1000000000;
 
 using namespace std;
 
@@ -14,8 +14,7 @@ int main()
 
 	for ( int i = 0; i < ESAY; i++ )
 	{
-		cout<<setw(5)<<i<<setw(5)<<sayilar[i]<<endl;
+		cout<<setw(5)<<i+1<<setw(5)<<sayilar[i]<<endl;
 	}
-	system("pause");
 	return 0;
 }

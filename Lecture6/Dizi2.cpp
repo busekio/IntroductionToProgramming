@@ -4,7 +4,7 @@
 
 using namespace std;
 
-const int ESAY=20;
+const int ESAY=10;
 
 int main()
 {   
@@ -14,13 +14,12 @@ int main()
 
 	for ( int i = 0; i < ESAY; i++ )
 	{
-			cout<<setw(5)<<i<<setw(8)<<sayilar[i]<<setw(15);
+			cout<<setw(5)<<i+1<<setw(8)<<sayilar[i]<<setw(15);
 			for(int j=0;j<sayilar[i];j++)
 				cout<<'*';
 			cout<<endl;
 
 			
 	}
-	system("pause");
 	return 0;
 }

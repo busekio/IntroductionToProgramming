@@ -1,18 +1,19 @@
 #include <iostream> 
 #include <iomanip> 
-#include <ctime> //time() 
+#include <cstdlib> //srand
 
 using namespace std;
 
 int main()
 {
-   const int ESAY = 25000; 
+   const int ESAY = 20; 
    int dizi[ESAY];
    int sayi,tekrar=0;
    
+   srand( time( 0 ) ); 
    do
    {
-       srand( time( 0 ) ); 
+       //srand( time( 0 ) ); 
        for ( int i = 0; i < ESAY ; i++ ) 
        {   
            dizi[i] = rand()%11;
@@ -24,16 +25,18 @@ int main()
            cout<< "\nsayi giriniz(0-10 arasi)";
            cin>>sayi;
        }while(!(sayi>0&&sayi<=10));
-   
+       
+	   tekrar=0;
        for ( int j = 0; j < ESAY ; j++ )   
        {   
            	if(sayi==dizi[j])
                 tekrar++;
        }
       
-      cout<<"\n"<<tekrar<<endl;
+      cout<<"\nFrekans:"<<tekrar<<endl;
+      
+      
    }while(sayi>0);
 
-  system("pause");
   return 0; 
 }

@@ -2,7 +2,7 @@
 #include <iomanip> 
 using namespace std;
 
-const int ESAY=100;
+const int ESAY=10;
 
 int main()
 {
@@ -18,7 +18,6 @@ int main()
             if((i+1)%5==0)
                 cout<<endl;
     }	   
-    system("pause");
     return 0; 
 } // end main
 
